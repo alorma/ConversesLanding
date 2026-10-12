@@ -128,7 +128,8 @@ main.doc { padding: 32px 0 80px; display: flex; flex-direction: column; gap: 40p
 .summary { align-items: start; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
 .summary li { display: flex; gap: 12px; }
 .doc-cols { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
-.toc { flex: 1 1 220px; background: var(--surface-card); border-radius: 24px; padding: 20px; display: flex; flex-direction: column; gap: 4px; position: sticky; top: 16px; }
+.toc { flex: 1 1 220px; background: var(--surface-card); border-radius: 24px; padding: 20px; display: flex; flex-direction: column; gap: 4px; }
+@media (min-width: 900px) { .toc { position: sticky; top: 16px; } }
 .toc .eyebrow { padding-bottom: 6px; }
 .toc a { min-height: 36px; display: flex; align-items: center; text-decoration: none; font-weight: 600; }
 .toc a:hover { text-decoration: underline; }
