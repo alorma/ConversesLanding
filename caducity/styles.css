@@ -41,7 +41,9 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-rad
 header.top { padding: 20px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
 .brand:hover { color: var(--ink); }
-.brand img { width: 40px; height: 40px; display: block; }
+.logo { position: relative; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+.logo svg { position: absolute; inset: 0; width: 40px; height: 40px; }
+.logo .ms { position: relative; font-size: 22px; color: var(--on-primary); }
 .brand span { font-size: 24px; letter-spacing: -.2px; }
 .topnav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; }
 .navlink { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; text-decoration: none; color: var(--ink); }
@@ -83,6 +85,8 @@ a.arrow { align-self: flex-start; display: inline-flex; align-items: center; gap
 .card { background: var(--surface-card); border-radius: 28px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
 .card h3 { margin: 0; font-weight: 700; font-size: 22px; line-height: 26px; }
 .card p { margin: 0; color: var(--ink-variant); }
+.shot { margin-top: auto; padding-top: 6px; display: block; }
+.shot img { display: block; width: 100%; height: auto; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; border-radius: 20px; border: 1px solid var(--outline-variant); }
 .icon-tile { width: 52px; height: 52px; border-radius: 16px; background: var(--primary-container); color: var(--on-primary-container); display: inline-flex; align-items: center; justify-content: center; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { display: inline-flex; align-items: center; gap: 8px; background: var(--surface-high); border-radius: 12px; padding: 10px 14px; font-weight: 600; font-size: 14px; }
@@ -97,8 +101,8 @@ a.arrow { align-self: flex-start; display: inline-flex; align-items: center; gap
 .status.soon { background: var(--soon-container); color: var(--on-soon-container); }
 .status.fresh { background: var(--fresh-container); color: var(--on-fresh-container); }
 .status.frozen { background: var(--frozen-container); color: var(--on-frozen-container); }
-.shapes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px; }
-.shapes li { background: var(--surface-card); border-radius: 28px; padding: 18px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.shapes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); gap: 12px; }
+.shapes li { background: var(--surface-card); border-radius: 28px; padding: 18px 8px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
 .shapes b { font-size: 14px; } .shapes small { font-size: 12px; color: var(--ink-variant); margin-top: -6px; }
 .shape { position: relative; width: 72px; height: 72px; display: inline-flex; align-items: center; justify-content: center; }
 .shape svg { position: absolute; inset: 0; width: 72px; height: 72px; }
