@@ -41,9 +41,7 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-rad
 header.top { padding: 20px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
 .brand:hover { color: var(--ink); }
-.logo { position: relative; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
-.logo svg { position: absolute; inset: 0; width: 40px; height: 40px; }
-.logo .ms { position: relative; font-size: 22px; color: var(--on-primary); }
+.logo { width: 40px; height: 40px; display: block; flex: none; color: var(--primary); }
 .brand span { font-size: 24px; letter-spacing: -.2px; }
 .topnav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; }
 .navlink { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; text-decoration: none; color: var(--ink); }
@@ -125,9 +123,9 @@ main.doc { padding: 32px 0 80px; display: flex; flex-direction: column; gap: 40p
 .doc-head.wide { max-width: 800px; }
 .doc-head h1 { margin: 0; font-size: clamp(40px, 6vw, 64px); line-height: 1; }
 .doc-head p { margin: 0; }
-.band.stack { flex-direction: column; align-items: stretch; gap: 20px; padding: clamp(24px, 4vw, 40px); }
+.band.stack { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 20px; padding: clamp(24px, 4vw, 40px); }
 .band.stack h2 { font-size: 28px; }
-.summary { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.summary { align-items: start; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
 .summary li { display: flex; gap: 12px; }
 .doc-cols { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
 .toc { flex: 1 1 220px; background: var(--surface-card); border-radius: 24px; padding: 20px; display: flex; flex-direction: column; gap: 4px; position: sticky; top: 16px; }
@@ -167,10 +165,10 @@ main.doc { padding: 32px 0 80px; display: flex; flex-direction: column; gap: 40p
 .accept h2 { font-size: 20px; margin-bottom: 6px; }
 
 /* Peu */
-footer.bottom { margin: 0 -24px; padding: 40px 24px; background: var(--surface-card); border-radius: 32px 32px 0 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
+footer.bottom { margin: 0 -24px; padding: 40px 24px 48px; background: var(--surface-card); border-radius: 32px 32px 0 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
 .foot-id { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--ink-variant); }
 .foot-name { font-size: 22px; color: var(--ink); }
 footer.bottom nav { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: flex-start; }
 footer.bottom nav a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; }
 footer.bottom .tm { flex: 0 0 100%; margin: 0; font-size: 12px; color: var(--ink-variant); }
-@media (min-width: 1208px) { footer.bottom { margin: 0; padding-left: 0; padding-right: 0; border-radius: 32px 32px 0 0; } }
+@media (min-width: 1208px) { footer.bottom { margin: 0; padding: 40px 40px 48px; } }
