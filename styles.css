@@ -86,3 +86,22 @@ main.doc { padding: 32px 0 72px; display: flex; flex-direction: column; gap: 40p
 footer.bottom nav { display: flex; flex-wrap: wrap; gap: 0 24px; }
 footer.bottom nav a.link { min-height: 44px; display: inline-flex; align-items: center; padding: 0; font-weight: 600; }
 footer.bottom .tm { flex: 0 0 100%; margin: 0; font-size: 12px; line-height: 16px; color: var(--ink-2); }
+
+.wear { padding-bottom: 72px; }
+.wear > p { margin: 0 0 24px; font-size: 17px; line-height: 24px; color: var(--ink-2); max-width: 560px; }
+.wear > p.note { margin: 24px 0 0; font-size: 15px; line-height: 20px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px 16px; }
+.shots figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.shots img { width: 100%; max-width: 260px; height: auto; border-radius: 50%; display: block; }
+.shots figcaption { font-size: 14px; line-height: 20px; font-weight: 600; text-align: center; }
+.wear-gallery { display: flex; flex-wrap: wrap; align-items: center; gap: 32px 40px; }
+.wear-gallery .phone { flex: none; margin: 0 auto; width: 240px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.wear-gallery .phone img { width: 100%; height: auto; border-radius: 32px 32px 0 0; display: block; }
+.wear-gallery .phone figcaption { font-size: 14px; line-height: 20px; font-weight: 600; }
+.wear-gallery .shots { flex: 1 1 420px; min-width: 0; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+
+.screens { padding-bottom: 72px; }
+.phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 24px; }
+.phones figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.phones img { width: 100%; max-width: 300px; height: auto; border-radius: 36px 36px 0 0; display: block; }
+.phones figcaption { font-size: 14px; line-height: 20px; font-weight: 600; text-align: center; }
