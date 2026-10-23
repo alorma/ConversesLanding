@@ -1,0 +1,23 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.alorma.contactnotes",
+      "sha256_cert_fingerprints": [
+        "64:24:A7:8D:A2:E3:C1:37:C9:B5:D3:31:0D:D8:91:35:DB:19:53:19:35:B5:A3:78:B9:0D:17:C6:C6:9E:12:6C",
+        "DA:96:3E:30:19:E0:3B:FE:34:82:A7:D8:A5:7C:52:FE:FC:51:82:D2:1A:7C:E4:F3:54:FA:77:AA:8C:86:DB:93"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.alorma.contactnotes.dev",
+      "sha256_cert_fingerprints": [
+        "ED:05:68:1E:0F:BC:59:14:C7:28:28:AF:EB:DD:5A:B9:8F:7A:43:33:68:EA:96:29:65:14:E4:35:CA:46:2C:B5"
+      ]
+    }
+  }
+]
